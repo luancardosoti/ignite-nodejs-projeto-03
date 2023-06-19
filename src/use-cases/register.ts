@@ -20,7 +20,7 @@ export class RegisterUseCase {
       throw new UserAlreadyExistsError()
     }
 
-    const password_hash = await hash(password, 14)
+    const password_hash = await hasrh(password, 14)
 
     await this.usersRepository.create({
       name,
