@@ -1,8 +1,8 @@
-import { expect, describe, it } from 'vitest'
-import { RegisterUseCase } from './register'
-import { compare } from 'bcryptjs'
 import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository'
+import { compare } from 'bcryptjs'
+import { describe, expect, it } from 'vitest'
 import { UserAlreadyExistsError } from './erros/user-already-exists-error'
+import { RegisterUseCase } from './register'
 
 describe('Register Use Case', () => {
   it('should be able to register', async () => {
@@ -45,7 +45,7 @@ describe('Register Use Case', () => {
       password: '123',
     })
 
-    expect(() =>
+    await expect(() =>
       registerUseCase.execute({
         name: 'John Doe',
         email,
