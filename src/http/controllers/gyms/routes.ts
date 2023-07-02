@@ -10,7 +10,7 @@ export async function gymsRoutes(app: FastifyInstance) {
   app.addHook('onRequest', jwtVerify)
 
   app.get('/gyms/search', search)
-  app.get('/gyms/neary', nearby)
+  app.get('/gyms/nearby', nearby)
 
   app.post('/gyms', create)
 }
