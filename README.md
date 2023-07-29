@@ -1,3 +1,9 @@
+# Curso Ignite Nodejs
+
+## Projeto 03 - Criando API Node.js com SOLID
+
+Nesse terceiro módulo desenvolvi uma aplicação de check-ins em academias utilizando conceitos do SOLID, Design Patterns, Docker para dependência do banco de dados em postgres, Testes com vitest, Autenticação e Autorização com JWT, Refresh Token e RBAC. No fim preparamos a aplicação para utilizar o github actions num processo de CI/CD para executar os testes unitários e E2E antes do deploy automático.
+
 # App
 
 GymPass style app
